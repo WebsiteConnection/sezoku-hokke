@@ -3,9 +3,9 @@ import heroImage from "@/assets/hero-lotus.jpg";
 
 /** Edit all Japanese hero text in one place */
 const HERO_JA = {
-  title: "慈智仏教",
-  subtitle: "法華経の現代的解釈",
-  tagline: "「妙法」は、実存の智慧と慈悲へ。",
+  title: "世俗仏教",
+  subtitle: "法華経の伝統において",
+  tagline: "法華経の尊い核心：神秘的で不可解な原理ではなく、自然の摂理に基づく普遍的な倫理。",
   heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
 } as const;
 

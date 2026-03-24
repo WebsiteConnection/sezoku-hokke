@@ -5,9 +5,10 @@ import heroImage from "@/assets/hero-lotus.jpg";
 const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",
-  /* We use a span here instead of a hard <br /> */
-  tagline: "伝統的な仏教の概念を、",
-  taglinePart2: "直接的な「生命の肯定」へと置き換える現代的な教え。",
+  /* Split into 3 parts for precise mobile control */
+  taglinePart1: "伝統的な仏教の概念を、",
+  taglinePart2: "直接的な「生命の肯定」へと",
+  taglinePart3: "置き換える現代的な教え。",
   heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
 } as const;
 
@@ -52,11 +53,6 @@ const HeroSectionJa = () => {
                 --ja-subtitle-size: 2.8rem;
               }
             }
-            /* This class forces a break ONLY on desktop */
-            .desktop-break { display: block; }
-            @media (max-width: 767px) {
-              .desktop-break { display: inline; }
-            }
           `}</style>
 
           {HERO_JA.title}
@@ -72,18 +68,19 @@ const HeroSectionJa = () => {
 
         <div className="w-16 h-px bg-accent mx-auto mb-8" />
 
-        {/* Updated Tagline with "Soft Break" logic */}
+        {/* Updated Tagline with 3-line break logic */}
         <p 
           className="leading-relaxed max-w-3xl mx-auto text-primary-foreground/90 shadow-none font-normal" 
           style={{ 
-             fontSize: '1.3rem', // Slightly smaller for better mobile fit
+             fontSize: '1.2rem', // Reduced slightly for better 3-line mobile fit
              textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
-             lineHeight: '1.8'
+             lineHeight: '2.0' // Increased line height for vertical readability
           }}
         >
-          {HERO_JA.tagline}
-          <span className="md:block" /> {/* This creates the break ONLY on Desktop */}
-          {HERO_JA.taglinePart2}
+          {/* Using span blocks to control wrapping */}
+          <span className="block md:inline">{HERO_JA.taglinePart1}</span>
+          <span className="block md:inline">{HERO_JA.taglinePart2}</span>
+          <span className="block md:inline">{HERO_JA.taglinePart3}</span>
         </p>
       </div>
     </section>

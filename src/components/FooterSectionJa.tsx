@@ -5,14 +5,17 @@ const FooterSectionJa = () => {
     <footer className="py-16 px-6 border-t border-border">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
+          {/* UPDATED: Points to your new distinct English URL */}
           <a
-            href="/"
+            href="https://secular-lotus.vercel.app"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-body"
           >
             <Globe className="w-4 h-4" />
-            English Website
+            English Website (英語版サイト)
           </a>
+          
           <span className="hidden sm:inline text-border">|</span>
+          
           <a
             href="mailto:SecularLotus@gmail.com"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-body"
@@ -21,8 +24,9 @@ const FooterSectionJa = () => {
             SecularLotus@gmail.com
           </a>
         </div>
+        
         <p className="text-sm text-muted-foreground font-body">
-          最終更新：2026年3月1日
+          最終更新：2026年3月24日
         </p>
       </div>
     </footer>

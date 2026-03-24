@@ -30,50 +30,52 @@ const HeroSectionJa = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-background" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
-        <h1
-          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
-          style={{
-            fontFamily: "'Noto Sans JP', sans-serif",
-            fontSize: 'var(--ja-title-size)',
-            lineHeight: '1.2'
-          } as React.CSSProperties}>
-          
-          <style>{`
-            :root {
-              --ja-title-size: 2.5rem;
-              --ja-subtitle-size: 1.6rem;
-            }
-            @media (min-width: 768px) {
-              :root {
-                --ja-title-size: 4.5rem;
-                --ja-subtitle-size: 2.2rem;
-              }
-            }
-          `}</style>
+   <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+  <h1
+    className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
+    style={{
+      fontFamily: "'Noto Sans JP', sans-serif",
+      fontSize: 'var(--ja-title-size)',
+      lineHeight: '1.2'
+    } as React.CSSProperties}>
+    
+    <style>{`
+      :root {
+        /* Mobile Sizes (Under 768px) */
+        --ja-title-size: 3rem;       /* Increased from 2.5rem */
+        --ja-subtitle-size: 1.85rem; /* Increased from 1.6rem */
+      }
+      @media (min-width: 768px) {
+        :root {
+          /* Desktop Sizes (Above 768px) */
+          --ja-title-size: 5.5rem;    /* Increased from 4.5rem */
+          --ja-subtitle-size: 2.8rem; /* Increased from 2.2rem */
+        }
+      }
+    `}</style>
 
-          {HERO_JA.title}
-          <span
-            className="block font-light mt-4 opacity-90"
-            style={{
-              fontSize: 'var(--ja-subtitle-size)',
-              textShadow: '0px 2px 8px rgba(0,0,0,0.3)'
-            }}>
-            {HERO_JA.subtitle}
-          </span>
-        </h1>
+    {HERO_JA.title}
+    <span
+      className="block font-light mt-4 opacity-90"
+      style={{
+        fontSize: 'var(--ja-subtitle-size)',
+        textShadow: '0px 2px 8px rgba(0,0,0,0.3)'
+      }}>
+      {HERO_JA.subtitle}
+    </span>
+  </h1>
 
-        <div className="w-16 h-px bg-accent mx-auto mb-8" />
+  <div className="w-16 h-px bg-accent mx-auto mb-8" />
 
-        <p className="leading-relaxed max-w-2xl mx-auto text-primary-foreground/90 shadow-none font-normal" 
-           style={{ 
-             fontSize: '1.15rem', // Adjusted for better Japanese readability
-             textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
-             lineHeight: '1.8'
-           }}>
-          {HERO_JA.tagline}
-        </p>
-      </div>
+  <p className="leading-relaxed max-w-3xl mx-auto text-primary-foreground/90 shadow-none font-normal" 
+     style={{ 
+       fontSize: '1.4rem',       /* Increased from 1.15rem */
+       textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
+       lineHeight: '1.8'
+     }}>
+    {HERO_JA.tagline}
+  </p>
+</div>   
     </section>
   );
 };

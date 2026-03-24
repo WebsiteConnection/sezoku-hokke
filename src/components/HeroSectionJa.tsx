@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-lotus.jpg";
 const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",
-  tagline: "輪廻転生、絶対神、死者への祈りといった従来の宗教観を超え、純粋な「生の肯定」として機能する教え。",
+  tagline: "伝統的な仏教の概念を、生命の肯定へと置き換える現代的な教え。",
   heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
 } as const;
 

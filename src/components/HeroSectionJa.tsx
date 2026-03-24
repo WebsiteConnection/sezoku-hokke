@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-lotus.jpg";
 const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",
-  tagline: "法華経の尊い核心：神秘的で不可解な原理ではなく、自然の摂理に基づく普遍的な倫理。",
+  tagline: "輪廻転生、絶対神、死者への祈りといった従来の宗教観を超え、純粋な「生の肯定」として機能する教え。",
   heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
 } as const;
 

@@ -1,13 +1,13 @@
 import HeroSectionJa from "@/components/HeroSectionJa";
-import ResourcesSection from "@/components/ResourcesSection";
-import FooterSection from "@/components/FooterSection";
+import ResourcesSectionJa from "@/components/ResourcesSectionJa"; // Changed to Ja
+import FooterSectionJa from "@/components/FooterSectionJa";       // Changed to Ja
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroSectionJa />
-      <ResourcesSection />
-      <FooterSection />
+      <ResourcesSectionJa />
+      <FooterSectionJa />
     </div>
   );
 };

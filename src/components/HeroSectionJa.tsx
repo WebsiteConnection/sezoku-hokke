@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-lotus.jpg";
 const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",
-  /* Split into 3 parts for precise mobile control */
+  /* Split for precise control */
   taglinePart1: "伝統的な仏教の概念を、",
   taglinePart2: "直接的な「生命の肯定」へと",
   taglinePart3: "置き換える現代的な教え。",
@@ -70,18 +70,23 @@ const HeroSectionJa = () => {
 
         {/* Updated Tagline with 3-line break logic */}
         <p 
-          className="leading-relaxed max-w-3xl mx-auto text-primary-foreground/90 shadow-none font-normal" 
+          className="leading-relaxed max-w-4xl mx-auto text-primary-foreground/90 font-normal" 
           style={{ 
-             fontSize: '1.2rem', // Reduced slightly for better 3-line mobile fit
+             fontSize: '1.25rem', 
              textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
-             lineHeight: '2.0' // Increased line height for vertical readability
+             lineHeight: '1.8'
           }}
         >
-          {/* Using span blocks to control wrapping */}
-          <span className="block md:inline">{HERO_JA.taglinePart1}</span>
-          <span className="block md:inline">{HERO_JA.taglinePart2}</span>
-          <span className="block md:inline">{HERO_JA.taglinePart3}</span>
+          {/* Part 1: Always its own line (block) on all screens */}
+          <span className="block">{HERO_JA.taglinePart1}</span>
+
+          {/* Part 2: Block on small mobile, Inline on everything else (sm: and up) */}
+          <span className="block sm:inline">{HERO_JA.taglinePart2}</span>
+
+          {/* Part 3: Inline ensures it follows Part 2 on the same line if space allows */}
+          <span className="inline">{HERO_JA.taglinePart3}</span>
         </p>
+
       </div>
     </section>
   );

@@ -12,13 +12,15 @@ const HERO_JA = {
 const HeroSectionJa = () => {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-      <Link
-        to="/"
+      {/* LANGUAGE TOGGLE: Pointing to your separate English Vercel URL */}
+      <a
+        href="https://secular-lotus.vercel.app"
         className="absolute top-5 right-6 z-20 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide"
-        style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-        
+        style={{ fontFamily: "'Source Sans 3', sans-serif" }}
+      >
         English
-      </Link>
+      </a>
+
       <div className="absolute inset-0">
         <img
           src={heroImage}
@@ -27,9 +29,10 @@ const HeroSectionJa = () => {
         
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-background" />
       </div>
-      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
         <h1
-          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6 text-8xl"
+          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
           style={{
             fontFamily: "'Noto Sans JP', sans-serif",
             fontSize: 'var(--ja-title-size)',
@@ -38,35 +41,41 @@ const HeroSectionJa = () => {
           
           <style>{`
             :root {
-              --ja-title-size: 2.2rem;
-              --ja-subtitle-size: 1.8rem;
+              --ja-title-size: 2.5rem;
+              --ja-subtitle-size: 1.6rem;
             }
             @media (min-width: 768px) {
               :root {
-                --ja-title-size: 4rem;
-                --ja-subtitle-size: 2.5rem;
+                --ja-title-size: 4.5rem;
+                --ja-subtitle-size: 2.2rem;
               }
             }
           `}</style>
+
           {HERO_JA.title}
           <span
-            className="block font-light mt-2 opacity-100"
+            className="block font-light mt-4 opacity-90"
             style={{
-              fontFamily: "'Noto Sans JP', sans-serif",
               fontSize: 'var(--ja-subtitle-size)',
-              lineHeight: '1.2',
-              textShadow: '0px 2px 4px rgba(0,0,0,0.4)'
+              textShadow: '0px 2px 8px rgba(0,0,0,0.3)'
             }}>
             {HERO_JA.subtitle}
           </span>
         </h1>
-        <div className="w-16 h-px bg-accent mx-auto mb-6" />
-        <p className="leading-relaxed max-w-xl mx-auto text-primary-foreground/85 text-4xl shadow-none font-normal" style={{ fontFamily: "'Noto Sans JP', sans-serif", textShadow: '0px 2px 4px rgba(0,0,0,0.4)' }}>
+
+        <div className="w-16 h-px bg-accent mx-auto mb-8" />
+
+        <p className="leading-relaxed max-w-2xl mx-auto text-primary-foreground/90 shadow-none font-normal" 
+           style={{ 
+             fontSize: '1.15rem', // Adjusted for better Japanese readability
+             textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
+             lineHeight: '1.8'
+           }}>
           {HERO_JA.tagline}
         </p>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default HeroSectionJa;

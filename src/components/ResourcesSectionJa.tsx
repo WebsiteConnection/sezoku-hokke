@@ -32,10 +32,10 @@ const ResourcesSectionJa = () => {
     <section className="py-20 px-6" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-light text-center mb-4" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
-          教えを深める
+          この教えを知る
         </h2>
         <p className="text-muted-foreground text-center mb-14 max-w-lg mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
-          以下のコンテンツでは、神秘主義を排除した法華経の受け入れ方について解説しています。
+          【ご案内】以下のリンク先は、複雑な考察を含む内容となっております。現在、日本語表現の正確性を精査中ですが、その革新的な内容を鑑み、現時点で公開しております。
         </p>
         <div className="grid gap-4 md:grid-cols-2">
           {resources.map((resource) => (

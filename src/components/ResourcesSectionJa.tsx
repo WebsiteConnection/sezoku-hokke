@@ -1,3 +1,4 @@
+import React from "react";
 import { FileText, Play, BookOpen, Heart, Globe, Award, Headphones } from "lucide-react";
 
 const resources = [

@@ -1,6 +1,6 @@
 import { FileText, Play, BookOpen, Heart, Globe, Award, Headphones } from "lucide-react";
 
-const resourcesJa = [
+const resources = [
   {
     title: "紹介動画",
     description: "本教えの概要を簡潔に説明した8分間のスライドプレゼンテーションをご覧ください。",

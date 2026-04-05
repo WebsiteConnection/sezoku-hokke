@@ -1,42 +1,42 @@
 import { FileText, Play, BookOpen, Heart, Globe, Award, Headphones } from "lucide-react";
 
-const resources = [
+const resourcesJa = [
   {
-    title: "紹介動画（英語）",
-    description: "本論文で紹介されている教えについての8分間のスライドプレゼンテーションをご視聴いただけます。",
+    title: "紹介動画",
+    description: "本教えの概要を簡潔に説明した8分間のスライドプレゼンテーションをご覧ください。",
     icon: Play,
     url: "https://drive.google.com/file/d/18NtS37Qcz4Xy9fScUj4Qsv80Kzjr_Wgz/view?usp=drive_link"
   },
   {
-    title: "内在からの究極",
-    description: "インド国際仏教学術雑誌（IIJBS）に掲載されたオリジナル論文の最新版をお読みいただけます。",
+    title: "『内在からの究極』",
+    description: "2024年に初めて発表された学術論文の最新版をご覧いただけます。",
     icon: BookOpen,
-    url: "https://drive.google.com/file/d/1DV25M01MNvVrEjAj4A9v5yoU0ESxgd1T/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1M2Kc9GLZWDJmpXlAOyyQ9h-qNlEe-tnY/view?usp=drive_link"
   },
   {
-    title: "論文の朗読（英語音声）",
-    description: "「内在からの究極」のナレーション版をお聴きいただけます。",
+    title: "音声朗読",
+    description: "論文『内在からの究極』の朗読をお聞きいただけます。",
     icon: Headphones,
     url: "https://drive.google.com/file/d/1tY41QAOXcn7ffA2SYXjuykRv1H3DSp36/view?usp=drive_link"
   },
   {
-    title: "世俗的な祈り",
-    description: "伝統的な仏教の典礼を、世俗的な世界観に合わせてどのように適応させるかを考察します。",
+    title: "世俗の祈り",
+    description: <><em>『法華経』</em>に基づく伝統的な儀礼を、いかにして世俗的な世界観に適応させることができるかを考察します。</>,
     icon: Heart,
-    url: "https://drive.google.com/file/d/1gDc1oaHPlhOIbnTrhTV3ntTM0kd6YtpQ/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1ixOBFVsgtR3TXvIBuMtoQQvQu1PrPR76/view?usp=drive_link"
   },
   {
-    title: "セキュラー仏教ネットワーク",
-    description: "これらの教えが、他の現代的なセキュラー仏教の形態とどのように異なるかに焦点を当てています。",
+    title: "世俗仏教ネットワークの記事",
+    description: "本教えが他の形態の世俗仏教とどのように異なるのかに焦点を当てています。",
     icon: Globe,
-    url: "https://drive.google.com/file/d/1EbT7dTw_JnYhhgHWqYkxFkElyvI42bVW/view?usp=drive_link",
+    url: "https://drive.google.com/file/d/1cb2xofZI_IoETYXoPyzAZAUNh1V1JQC7/view?usp=drive_link"
   },
   {
     title: "グロマイヤー賞ノミネート",
-    description: "2027年グロマイヤー賞（宗教部門）へのノミネートに関する詳細です。",
+    description: "2027年グロマイヤー賞（宗教部門）の推薦資料です。",
     icon: Award,
-    url: "https://drive.google.com/file/d/1K2P8tYJ8jySWwSdpJvvBAh6va9DcwoLw/view?usp=drive_link",
-  },
+    url: "https://drive.google.com/file/d/13UiGjXitxICfhJoHzKUo-LTWgTzaQOEn/view?usp=drive_link"
+  }
 ];
 
 const ResourcesSectionJa = () => {

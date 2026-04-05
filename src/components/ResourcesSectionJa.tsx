@@ -44,12 +44,14 @@ const ResourcesSectionJa = () => {
   return (
     <section className="py-20 px-6 bg-background/50" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-light text-center mb-4" style={{ fontWeight: 300 }}>
-          この教えを知る
-        </h2>
-        <p className="text-muted-foreground text-center mb-14 max-w-2xl mx-auto text-sm leading-relaxed italic">
-          【ご案内】以下のリンク先は、複雑な考察を含む内容となっております。現在、日本語表現の正確性を精査中ですが、その革新的な内容を鑑み、現時点で公開しております。
-        </p>
+        <h2 className="text-3xl md:text-4xl font-light text-center mb-4" style={{ fontWeight: 300, fontFamily: "'Noto Sans JP', sans-serif" }}>
+  この教えを知る
+</h2>
+
+{/* Removed 'italic', kept 'text-sm' and 'leading-relaxed' for professional clarity */}
+<p className="text-muted-foreground text-center mb-14 max-w-2xl mx-auto text-sm leading-relaxed" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+  【ご案内】以下のリンク先は、複雑な考察を含む内容となっております。現在、日本語表現の正確性を精査中ですが、その革新的な内容を鑑み、現時点で公開しております。
+</p>
         
         <div className="grid gap-6 md:grid-cols-2">
           {resources.map((resource) => (

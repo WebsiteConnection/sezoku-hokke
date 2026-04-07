@@ -12,7 +12,7 @@ const resources = [
     title: "『内在からの究極』",
     description: "2024年に初めて発表された学術論文の最新版をご覧いただけます。",
     icon: BookOpen,
-    url: "https://drive.google.com/file/d/1M2Kc9GLZWDJmpXlAOyyQ9h-qNlEe-tnY/view?usp=drive_link"
+    url: "https://drive.google.com/file/d/1DV25M01MNvVrEjAj4A9v5yoU0ESxgd1T/view?usp=drive_link"
   },
   {
     title: "音声朗読",
@@ -24,7 +24,7 @@ const resources = [
     title: "世俗の祈り",
     description: <><em>『法華経』</em>に基づく伝統的な儀礼を、いかにして世俗的な世界観に適応させることができるかを考察します。</>,
     icon: Heart,
-    url: "https://drive.google.com/file/d/1ixOBFVsgtR3TXvIBuMtoQQvQu1PrPR76/view?usp=drive_link"
+    url: "https://drive.google.com/file/d/1gDc1oaHPlhOIbnTrhTV3ntTM0kd6YtpQ/view?usp=drive_link"
   },
   {
     title: "世俗仏教ネットワークの記事",

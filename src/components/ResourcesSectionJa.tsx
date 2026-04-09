@@ -36,7 +36,7 @@ const resources = [
     title: "グロマイヤー賞ノミネート",
     description: "2027年グロマイヤー賞（宗教部門）の推薦資料です。",
     icon: Award,
-    url: "https://drive.google.com/file/d/13UiGjXitxICfhJoHzKUo-LTWgTzaQOEn/view?usp=drive_link"
+    url: "https://drive.google.com/file/d/1K2P8tYJ8jySWwSdpJvvBAh6va9DcwoLw/view?usp=drive_link"
   }
 ];
 

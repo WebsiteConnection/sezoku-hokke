@@ -6,7 +6,7 @@ const resources = [
     title: "紹介動画",
     description: "本教えの概要を簡潔に説明した8分間のスライドプレゼンテーションをご覧ください。",
     icon: Play,
-    url: "https://drive.google.com/file/d/18NtS37Qcz4Xy9fScUj4Qsv80Kzjr_Wgz/view?usp=drive_link"
+    url: "https://drive.google.com/file/d/1rPBFP4sz_QwE4GiBrpSwWrZAj9LmVVBn/view?usp=sharing"
   },
   {
     title: "『内在からの究極』",

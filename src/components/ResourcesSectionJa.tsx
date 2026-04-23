@@ -18,7 +18,7 @@ const resources = [
     title: "音声朗読",
     description: "論文『内在からの究極』の朗読をお聞きいただけます。",
     icon: Headphones,
-    url: "https://drive.google.com/file/d/1tY41QAOXcn7ffA2SYXjuykRv1H3DSp36/view?usp=drive_link"
+    url: "https://drive.google.com/file/d/18ydRe3MUxqqMImycKjj8soFj6Am4SOTW/view?usp=sharing"
   },
   {
     title: "世俗の祈り",

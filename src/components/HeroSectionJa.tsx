@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-lotus.jpg";
 
 /** Edit all Japanese hero text in one place */

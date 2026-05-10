@@ -52,7 +52,7 @@ const HeroSectionJa = () => {
             }
             @media (min-width: 768px) {
               :root {
-                --ja-title-size: 5.5rem;
+                --ja-title-size: 5.7rem;
                 --ja-subtitle-size: 2.5rem;
                 --ja-tagline-size: 1.25rem;
               }

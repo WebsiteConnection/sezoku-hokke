@@ -30,7 +30,7 @@ const HeroSectionJa = () => {
           src={heroImageUrl}
           alt={HERO_JA.heroAlt}
           className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-background" />
       </div>
 
       {}

@@ -86,8 +86,8 @@ const HeroSectionJa = () => {
               'block' makes them stack on handheld devices.
               'sm:inline' makes them join together on tablets and desktops.
           */}
-          <span className="block sm:inline">{HERO_JA.taglinePart1}</span>
-          <span className="block sm:inline sm:ml-1">{HERO_JA.taglinePart2}</span>
+          <span className="block md:inline">{HERO_JA.taglinePart1}</span>
+          <span className="block md:inline sm:ml-1">{HERO_JA.taglinePart2}</span>
         </p>
 
       </div>

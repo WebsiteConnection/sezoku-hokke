@@ -15,7 +15,6 @@ const HERO_JA = {
 // import heroImage from "@/assets/hero-lotus.jpg"; 
 
 // Fallback for the preview environment to prevent a blank screen
-const heroImageUrl = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=2000";
 
 const HeroSectionJa = () => {
   return (

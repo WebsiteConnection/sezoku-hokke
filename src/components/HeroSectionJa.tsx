@@ -61,7 +61,7 @@ const HeroSectionJa = () => {
 
           {HERO_JA.title}
           <span
-            className="block font-light mt-5 opacity-90"
+            className="block font-light mt-4 opacity-90"
             style={{
               fontSize: 'var(--ja-subtitle-size)',
               textShadow: '0px 2px 8px rgba(0,0,0,0.3)'

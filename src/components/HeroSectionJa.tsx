@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-lotus.jpg";
+/**
+ * Note: This import refers to your local project folder. 
+ * If the preview here displays a 'Could not resolve' error or a blank screen, 
+ * it is simply because this website cannot access your computer's local files. 
+ * This code is correct for your local environment.
+ */
+import heroImage from "@/assets/hero-lotus.jpg"; 
 
-/** Edit all Japanese hero text in one place */
+/** 
+ * Edit all Japanese hero text in one place.
+ * Updated to the two-part tagline as requested.
+ */
 const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",
-  /* The two-part tagline you requested */
   taglinePart1: "伝統的な仏教の概念を超え、",
   taglinePart2: "直接的な「生命の肯定」へ。",
   heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
@@ -16,8 +24,7 @@ const HeroSectionJa = () => {
   return (
     <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 md:py-0">
       
-      { }
-      {/* LANGUAGE TOGGLE */}
+      {}
       <a
         href="https://secular-lotus.vercel.app"
         className="absolute top-5 right-6 z-20 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide"
@@ -26,19 +33,18 @@ const HeroSectionJa = () => {
         English
       </a>
 
-      { }
-      {/* Background and Image */}
+      {}
       <div className="absolute inset-0">
         <img
-          src={heroImageUrl} 
+          src={heroImage} 
           alt={HERO_JA.heroAlt}
           className="w-full h-full object-cover" 
         />
-        {/* Restored your original gradient classes to fix the black screen issue */}
+        {/* Restored your original theme-based gradient classes */}
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-background" />
       </div>
 
-      { }
+      {}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
         <h1
           className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
@@ -73,8 +79,7 @@ const HeroSectionJa = () => {
 
         <div className="w-16 h-px bg-accent mx-auto mb-8" />
 
-        { }
-        {/* Updated Tagline: 2 parts that stack on mobile, join on desktop */}
+        {}
         <p 
           className="leading-relaxed max-w-4xl mx-auto text-primary-foreground/90 font-normal" 
           style={{ 
@@ -83,10 +88,12 @@ const HeroSectionJa = () => {
              lineHeight: '1.8'
           }}
         >
-          {/* Part 1: Stacks on mobile (block), joins on desktop (sm:inline) */}
+          {/* 
+              Part 1 & 2: 
+              'block' makes them stack on handheld devices.
+              'sm:inline' makes them join together on tablets and desktops.
+          */}
           <span className="block sm:inline">{HERO_JA.taglinePart1}</span>
-
-          {/* Part 2: Stacks on mobile, joins on desktop with slight margin */}
           <span className="block sm:inline sm:ml-1">{HERO_JA.taglinePart2}</span>
         </p>
 

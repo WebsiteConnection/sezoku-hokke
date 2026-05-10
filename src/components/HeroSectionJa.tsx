@@ -48,11 +48,13 @@ const HeroSectionJa = () => {
             :root {
               --ja-title-size: 2.8rem;
               --ja-subtitle-size: 1.7rem;
+              --ja-subtitle-size: 1.1rem;
             }
             @media (min-width: 768px) {
               :root {
                 --ja-title-size: 5.5rem;
                 --ja-subtitle-size: 2.8rem;
+                --ja-subtitle-size: 1.25rem;
               }
             }
           `}</style>
@@ -74,7 +76,7 @@ const HeroSectionJa = () => {
         <p 
           className="leading-relaxed max-w-4xl mx-auto text-primary-foreground/90 font-normal" 
           style={{ 
-             fontSize: '1.25rem', 
+             fontSize: 'var(--ja-tagline-size)', 
              textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
              lineHeight: '1.8'
           }}

@@ -1,11 +1,5 @@
-import React from "react";
-
-/** 
- * EDITING NOTE: 
- * For your local environment, use: import heroImage from "@/assets/hero-lotus.jpg";
- * I am using a URL here to ensure the preview compiles and displays correctly.
- */
-const heroImageUrl = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=2000";
+import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-lotus.jpg";
 
 /** Edit all Japanese hero text in one place */
 const HERO_JA = {

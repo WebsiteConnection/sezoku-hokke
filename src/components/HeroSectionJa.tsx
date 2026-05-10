@@ -47,13 +47,13 @@ const HeroSectionJa = () => {
           <style>{`
             :root {
               --ja-title-size: 2.8rem;
-              --ja-subtitle-size: 3.2rem;
+              --ja-subtitle-size: 4.2rem;
               --ja-subtitle-size: 1.1rem;
             }
             @media (min-width: 768px) {
               :root {
                 --ja-title-size: 5.5rem;
-                --ja-subtitle-size: 4.2rem;
+                --ja-subtitle-size: 5.2rem;
                 --ja-subtitle-size: 1.25rem;
               }
             }

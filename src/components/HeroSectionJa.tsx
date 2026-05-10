@@ -1,25 +1,27 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-lotus.jpg";
+// Note: Assuming heroImage is handled via your build process or placeholder
+const heroImage = "/api/placeholder/1600/900"; 
 
 /** Edit all Japanese hero text in one place */
 const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",
-  /* Split for precise control */
-  taglinePart1: "伝統的な仏教の概念を、",
-  taglinePart2: "直接的な「生命の肯定」へと",
-  taglinePart3: "置き換える現代的な教え。",
-  heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
+  /* Two-part structure as requested */
+  taglinePart1: "伝統的な仏教の概念を超え、",
+  taglinePart2: "直接的な「生命の肯定」へ。",
+  heroAlt: "夜明けの静かな水面に浮かぶ蓮の花 "
 } as const;
 
 const HeroSectionJa = () => {
   return (
     <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 md:py-0">
       
+      {}
       {/* LANGUAGE TOGGLE */}
       <a
         href="https://secular-lotus.vercel.app"
-        className="absolute top-5 right-6 z-20 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide"
+        className="absolute top-5 right-6 z-20 text-sm text-white/70 hover:text-white transition-colors tracking-wide"
         style={{ fontFamily: "'Source Sans 3', sans-serif" }}
       >
         English
@@ -31,12 +33,13 @@ const HeroSectionJa = () => {
           src={heroImage}
           alt={HERO_JA.heroAlt}
           className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-slate-900" />
       </div>
 
+      {}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
         <h1
-          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
+          className="font-light tracking-normal md:tracking-wide text-white mb-6"
           style={{
             fontSize: 'var(--ja-title-size)',
             lineHeight: '1.2'
@@ -66,25 +69,30 @@ const HeroSectionJa = () => {
           </span>
         </h1>
 
-        <div className="w-16 h-px bg-accent mx-auto mb-8" />
+        <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
 
-        {/* Updated Tagline with 3-line break logic */}
+        {}
+        {/* Updated Tagline: Stacks on mobile, flows inline on desktop */}
         <p 
-          className="leading-relaxed max-w-4xl mx-auto text-primary-foreground/90 font-normal" 
+          className="leading-relaxed max-w-4xl mx-auto text-white/90 font-normal" 
           style={{ 
              fontSize: '1.25rem', 
              textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
              lineHeight: '1.8'
           }}
         >
-          {/* Part 1: Always its own line (block) on all screens */}
-          <span className="block">{HERO_JA.taglinePart1}</span>
+          {/* 
+              Part 1: 'block' makes it stack on mobile. 
+              'sm:inline' allows it to sit next to Part 2 on tablets/desktops.
+          */}
+          <span className="block sm:inline">{HERO_JA.taglinePart1}</span>
 
-          {/* Part 2: Block on small mobile, Inline on everything else (sm: and up) */}
-          <span className="block sm:inline">{HERO_JA.taglinePart2}</span>
-
-          {/* Part 3: Inline ensures it follows Part 2 on the same line if space allows */}
-          <span className="inline">{HERO_JA.taglinePart3}</span>
+          {/* 
+              Part 2: 'block' for mobile stacking. 
+              'sm:inline' for desktop flow.
+              'sm:ml-1' adds a tiny horizontal space when they sit on the same line.
+          */}
+          <span className="block sm:inline sm:ml-1">{HERO_JA.taglinePart2}</span>
         </p>
 
       </div>

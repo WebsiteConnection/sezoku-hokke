@@ -1,17 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-/**
- * Note: This import refers to your local project folder. 
- * If the preview here displays a 'Could not resolve' error or a blank screen, 
- * it is simply because this website cannot access your computer's local files. 
- * This code is correct for your local environment.
- */
+
 import heroImage from "@/assets/hero-lotus.jpg"; 
 
-/** 
- * Edit all Japanese hero text in one place.
- * Updated to the two-part tagline as requested.
- */
 const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",

@@ -77,7 +77,7 @@ const HeroSectionJa = () => {
           </span>
         </h1>
 
-        <div className="w-16 h-px bg-accent mx-auto mb-8" />
+        <div className="w-16 h-px bg-white mx-auto mb-8" />
 
         {}
         <p 

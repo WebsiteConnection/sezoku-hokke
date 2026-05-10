@@ -66,7 +66,7 @@ const HeroSectionJa = () => {
           </span>
         </h1>
 
-        <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+        <div className="w-16 h-px bg-accent mx-auto mb-8" />
 
         {}
         {/* Updated Tagline: Stacks on mobile (block), flows inline on desktop (sm:inline) */}

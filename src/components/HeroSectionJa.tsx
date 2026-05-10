@@ -46,15 +46,15 @@ const HeroSectionJa = () => {
           
           <style>{`
             :root {
-              --ja-title-size: 3.2rem;
-              --ja-subtitle-size: 1.6rem;
-              --ja-tagline-size: 1.2rem;
+              --ja-title-size: 3.3rem;
+              --ja-subtitle-size: 1.7rem;
+              --ja-tagline-size: 1.3rem;
             }
             @media (min-width: 768px) {
               :root {
-                --ja-title-size: 5.7rem;
-                --ja-subtitle-size: 2.5rem;
-                --ja-tagline-size: 1.7rem;
+                --ja-title-size: 5.8rem;
+                --ja-subtitle-size: 2.6rem;
+                --ja-tagline-size: 1.8rem;
               }
             }
           `}</style>
@@ -84,7 +84,6 @@ const HeroSectionJa = () => {
           {/* 
               Part 1 & 2: 
               'block' makes them stack on handheld devices.
-              'sm:inline' makes them join together on tablets and desktops.
           */}
           <span className="block">{HERO_JA.taglinePart1}</span>
           <span className="block">{HERO_JA.taglinePart2}</span>

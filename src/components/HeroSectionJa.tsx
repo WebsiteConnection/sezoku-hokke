@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from "@/assets/hero-lotus.jpg";
 
 /** Edit all Japanese hero text in one place */
 const HERO_JA = {

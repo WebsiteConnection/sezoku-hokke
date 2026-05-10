@@ -44,7 +44,7 @@ const ResourcesSectionJa = () => {
   return (
     <section className="py-20 px-6 bg-background/50" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-light text-center mb-4" style={{ fontWeight: 300, fontFamily: "'Noto Sans JP', sans-serif" }}>
+        <h2 className="text-2xl md:text-3xl font-light text-center mb-4" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
   この教えを知る
 </h2>
 

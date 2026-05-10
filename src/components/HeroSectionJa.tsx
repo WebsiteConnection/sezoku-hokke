@@ -78,7 +78,7 @@ const HeroSectionJa = () => {
           style={{ 
              fontSize: 'var(--ja-tagline-size)', 
              textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
-             lineHeight: '1.8'
+             lineHeight: '1.4'
           }}
         >
           {/* 
@@ -86,8 +86,8 @@ const HeroSectionJa = () => {
               'block' makes them stack on handheld devices.
               'sm:inline' makes them join together on tablets and desktops.
           */}
-          <span className="block md:inline">{HERO_JA.taglinePart1}</span>
-          <span className="block md:inline sm:ml-1">{HERO_JA.taglinePart2}</span>
+          <span className="block">{HERO_JA.taglinePart1}</span>
+          <span className="block">{HERO_JA.taglinePart2}</span>
         </p>
 
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from "@/assets/hero-lotus.jpg";
+import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-lotus.jpg";
 
 /** Edit all Japanese hero text in one place */
 const HERO_JA = {
@@ -10,11 +11,6 @@ const HERO_JA = {
   taglinePart2: "直接的な「生命の肯定」へ。",
   heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
 } as const;
-
-// Note: In your local project, the import below will work perfectly.
-// import heroImage from "@/assets/hero-lotus.jpg"; 
-
-// Fallback for the preview environment to prevent a blank screen
 
 const HeroSectionJa = () => {
   return (

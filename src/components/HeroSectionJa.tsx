@@ -7,7 +7,7 @@ const HERO_JA = {
   title: "世俗仏教",
   subtitle: "法華経の伝統において",
   taglinePart1: "伝統的な仏教の概念を超え",
-  taglinePart2: "直接的な「生命の肯定」へ",
+  taglinePart2: "直接的な「生命の肯定」に",
   heroAlt: "夜明けの静かな水面に浮かぶ蓮の花"
 } as const;
 

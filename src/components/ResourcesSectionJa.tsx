@@ -44,14 +44,13 @@ const ResourcesSectionJa = () => {
   return (
     <section className="py-20 px-6 bg-background/50" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-light text-center mb-4" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
-  この教えを知る
-</h2>
+        <h2 className="text-2xl md:text-3xl font-light text-neutral-900 text-center mb-4" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+          この教えを知る
+        </h2>
 
-{/* Removed 'italic', kept 'text-sm' and 'leading-relaxed' for professional clarity */}
-<p className="text-muted-foreground text-center mb-14 max-w-2xl mx-auto text-sm leading-relaxed" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
-  【ご案内】以下のリンク先は、複雑な考察を含む内容となっております。現在、日本語表現の正確性を精査中ですが、その革新的な内容を鑑み、現時点で公開しております。
-</p>
+        <p className="text-neutral-900 text-center mb-14 max-w-2xl mx-auto text-sm leading-relaxed" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+          【ご案内】以下のリンク先は、複雑な考察を含む内容となっております。現在、日本語表現の正確性を精査中ですが、その革新的な内容を鑑み、現時点で公開しております。
+        </p>
         
         <div className="grid gap-6 md:grid-cols-2">
           {resources.map((resource) => (
@@ -66,10 +65,10 @@ const ResourcesSectionJa = () => {
                 <resource.icon className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-lg font-medium mb-1 group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-medium text-neutral-900 mb-1 group-hover:text-primary transition-colors">
                   {resource.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-neutral-900 leading-relaxed">
                   {resource.description}
                 </p>
               </div>

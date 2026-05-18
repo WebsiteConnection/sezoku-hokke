@@ -15,7 +15,7 @@ const HeroSectionJa = () => {
   return (
     <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 md:py-0">
       
-      {/* LANGUAGE TOGGLE: Kept at text-base, stripped out text-shadow class */}
+      {/* LANGUAGE TOGGLE */}
       <a
         href="https://secular-lotus.vercel.app"
         className="absolute top-5 right-6 z-20 text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide"
@@ -24,23 +24,23 @@ const HeroSectionJa = () => {
         English
       </a>
 
-      {/* Background Image and Enhanced Gradient Overlay */}
+      {/* Background Image and Seamless Double-Overlay */}
       <div className="absolute inset-0">
         <img
           src={heroImage} 
           alt={HERO_JA.heroAlt}
           className="w-full h-full object-cover" 
         />
-        {/* Changed from: from-foreground/40 via-foreground/20
-          To: from-black/60 via-black/40
-          This darkens the background landscape uniformly to make white text stand out naturally.
-        */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.45)_0%,transparent_70%)]" />
+        
+        {/* Layer 1: Subtle, natural center vignette to lift the text without adding clouds */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.4)_0%,transparent_75%)]" />
+        
+        {/* Layer 2: Seamless bottom fade that melts the image directly into the Resources page background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
-        {/* H1: Removed the text-shadow-md class */}
         <h1
           className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
           style={{
@@ -48,7 +48,6 @@ const HeroSectionJa = () => {
             lineHeight: '1.2'
           } as React.CSSProperties}>
           
-          {/* Style Block: Removed the obsolete text-shadow classes entirely */}
           <style>{`
             :root {
               --ja-title-size: 3.5rem;
@@ -65,7 +64,6 @@ const HeroSectionJa = () => {
           `}</style>
 
           {HERO_JA.title}
-          {/* Subtitle: Removed the text-shadow-md class */}
           <span
             className="block font-light mt-4"
             style={{
@@ -75,10 +73,8 @@ const HeroSectionJa = () => {
           </span>
         </h1>
 
-        {/* Decorative Accent Line: Stripped shadow utility */}
         <div className="w-16 h-px bg-white mx-auto mb-8" />
 
-        {/* Main Tagline: Removed text-shadow-sm class, letting text rest naturally over the deeper overlay */}
         <p 
           className="leading-relaxed max-w-4xl mx-auto text-primary-foreground font-normal" 
           style={{ 

@@ -15,7 +15,7 @@ const HeroSectionJa = () => {
   return (
     <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 md:py-0">
       
-      {/* LANGUAGE TOGGLE: Restructured into an elegant semi-transparent glass capsule button */}
+      {/* LANGUAGE TOGGLE: Floating capsule */}
       <a
         href="https://secular-lotus.vercel.app"
         className="absolute top-5 right-6 z-20 text-sm font-medium text-white bg-black/20 hover:bg-black/40 border border-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full transition-all tracking-wide"
@@ -24,7 +24,7 @@ const HeroSectionJa = () => {
         English
       </a>
 
-      {/* Background Image and Clean Bottom-Fade Overlay */}
+      {/* Background Image and Balanced Radiance Overlays */}
       <div className="absolute inset-0">
         <img
           src={heroImage} 
@@ -32,7 +32,10 @@ const HeroSectionJa = () => {
           className="w-full h-full object-cover" 
         />
         
-        {/* Removed all dark clouds at the top/center. Now contains ONLY the seamless fade to the Resources section */}
+        {/* Layer 1: Symmetrical ambient radiance that brightens as it goes up, balancing the left/right sides */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-white/5 to-white/20 mix-blend-overlay" />
+        
+        {/* Layer 2: Seamless fade down into the background color of the Resources section below */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
       </div>
 

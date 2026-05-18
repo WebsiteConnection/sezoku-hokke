@@ -35,7 +35,7 @@ const HeroSectionJa = () => {
           To: from-black/60 via-black/40
           This darkens the background landscape uniformly to make white text stand out naturally.
         */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.45)_0%,transparent_70%)]" />
       </div>
 
       {/* Content Container */}

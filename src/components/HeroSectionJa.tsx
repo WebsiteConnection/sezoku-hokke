@@ -15,35 +15,40 @@ const HeroSectionJa = () => {
   return (
     <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 md:py-0">
       
-      {/* LANGUAGE TOGGLE - Added text-shadow-sm */}
+      {/* LANGUAGE TOGGLE: Kept at text-base, stripped out text-shadow class */}
       <a
         href="https://secular-lotus.vercel.app"
-        className="absolute top-5 right-6 z-20 text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide text-shadow-sm"
+        className="absolute top-5 right-6 z-20 text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide"
         style={{ fontFamily: "'Source Sans 3', sans-serif" }}
       >
         English
       </a>
 
-      {/* Background Image and Gradient Overlay */}
+      {/* Background Image and Enhanced Gradient Overlay */}
       <div className="absolute inset-0">
         <img
           src={heroImage} 
           alt={HERO_JA.heroAlt}
           className="w-full h-full object-cover" 
         />
-        {/* Restored your original theme-based gradient classes */}
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-background" />
+        {/* Changed from: from-foreground/40 via-foreground/20
+          To: from-black/60 via-black/40
+          This darkens the background landscape uniformly to make white text stand out naturally.
+        */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+        {/* H1: Removed the text-shadow-md class */}
         <h1
-          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6 text-shadow-md"
+          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
           style={{
             fontSize: 'var(--ja-title-size)',
             lineHeight: '1.2'
           } as React.CSSProperties}>
           
+          {/* Style Block: Removed the obsolete text-shadow classes entirely */}
           <style>{`
             :root {
               --ja-title-size: 3.5rem;
@@ -57,17 +62,12 @@ const HeroSectionJa = () => {
                 --ja-tagline-size: 2rem;
               }
             }
-            .text-shadow-md {
-              text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 20px rgba(0, 0, 0, 0.4);
-            }
-            .text-shadow-sm {
-              text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 4px 12px rgba(0, 0, 0, 0.6);
-            }
           `}</style>
 
           {HERO_JA.title}
+          {/* Subtitle: Removed the text-shadow-md class */}
           <span
-            className="block font-light mt-4 text-shadow-md"
+            className="block font-light mt-4"
             style={{
               fontSize: 'var(--ja-subtitle-size)',
             }}>
@@ -75,19 +75,17 @@ const HeroSectionJa = () => {
           </span>
         </h1>
 
-        <div className="w-16 h-px bg-white mx-auto mb-8 shadow-sm" />
+        {/* Decorative Accent Line: Stripped shadow utility */}
+        <div className="w-16 h-px bg-white mx-auto mb-8" />
 
-        {/* Main Tagline - Switched to clean text-shadow-sm class and 100% solid opacity */}
+        {/* Main Tagline: Removed text-shadow-sm class, letting text rest naturally over the deeper overlay */}
         <p 
-          className="leading-relaxed max-w-4xl mx-auto text-primary-foreground font-normal text-shadow-sm" 
+          className="leading-relaxed max-w-4xl mx-auto text-primary-foreground font-normal" 
           style={{ 
              fontSize: 'var(--ja-tagline-size)', 
              lineHeight: '1.4'
           }}
         >
-          {/* Part 1 & 2: 
-              'block' makes them stack on handheld devices.
-          */}
           <span className="block">{HERO_JA.taglinePart1}</span>
           <span className="block">{HERO_JA.taglinePart2}</span>
         </p>

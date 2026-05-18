@@ -15,16 +15,16 @@ const HeroSectionJa = () => {
   return (
     <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 md:py-0">
       
-      {}
+      {/* LANGUAGE TOGGLE - Added text-shadow-sm */}
       <a
         href="https://secular-lotus.vercel.app"
-        className="absolute top-5 right-6 z-20 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide"
+        className="absolute top-5 right-6 z-20 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide text-shadow-sm"
         style={{ fontFamily: "'Source Sans 3', sans-serif" }}
       >
         English
       </a>
 
-      {}
+      {/* Background Image and Gradient Overlay */}
       <div className="absolute inset-0">
         <img
           src={heroImage} 
@@ -35,10 +35,10 @@ const HeroSectionJa = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-background" />
       </div>
 
-      {}
+      {/* Content Container */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
         <h1
-          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6"
+          className="font-light tracking-normal md:tracking-wide text-primary-foreground mb-6 text-shadow-md"
           style={{
             fontSize: 'var(--ja-title-size)',
             lineHeight: '1.2'
@@ -57,32 +57,35 @@ const HeroSectionJa = () => {
                 --ja-tagline-size: 2rem;
               }
             }
+            .text-shadow-md {
+              text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 20px rgba(0, 0, 0, 0.4);
+            }
+            .text-shadow-sm {
+              text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 4px 12px rgba(0, 0, 0, 0.6);
+            }
           `}</style>
 
           {HERO_JA.title}
           <span
-            className="block font-light mt-4 opacity-90"
+            className="block font-light mt-4 text-shadow-md"
             style={{
               fontSize: 'var(--ja-subtitle-size)',
-              textShadow: '0px 2px 8px rgba(0,0,0,0.3)'
             }}>
             {HERO_JA.subtitle}
           </span>
         </h1>
 
-        <div className="w-16 h-px bg-white mx-auto mb-8" />
+        <div className="w-16 h-px bg-white mx-auto mb-8 shadow-sm" />
 
-        {}
+        {/* Main Tagline - Switched to clean text-shadow-sm class and 100% solid opacity */}
         <p 
-          className="leading-relaxed max-w-4xl mx-auto text-primary-foreground/90 font-normal" 
+          className="leading-relaxed max-w-4xl mx-auto text-primary-foreground font-normal text-shadow-sm" 
           style={{ 
              fontSize: 'var(--ja-tagline-size)', 
-             textShadow: '0px 2px 4px rgba(0,0,0,0.4)',
              lineHeight: '1.4'
           }}
         >
-          {/* 
-              Part 1 & 2: 
+          {/* Part 1 & 2: 
               'block' makes them stack on handheld devices.
           */}
           <span className="block">{HERO_JA.taglinePart1}</span>

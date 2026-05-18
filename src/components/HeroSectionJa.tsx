@@ -18,7 +18,7 @@ const HeroSectionJa = () => {
       {/* LANGUAGE TOGGLE - Added text-shadow-sm */}
       <a
         href="https://secular-lotus.vercel.app"
-        className="absolute top-5 right-6 z-20 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide text-shadow-sm"
+        className="absolute top-5 right-6 z-20 text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-wide text-shadow-sm"
         style={{ fontFamily: "'Source Sans 3', sans-serif" }}
       >
         English

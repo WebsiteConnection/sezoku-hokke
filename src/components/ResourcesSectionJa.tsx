@@ -29,7 +29,7 @@ const resources = [
   {
     title: "世俗仏教ネットワークの記事",
     description: "本教えが他の形態の世俗仏教とどのように異なるのかに焦点を当てています。",
-    icon: Globe,
+    icon: BookOpen,
     url: "https://drive.google.com/file/d/1EbT7dTw_JnYhhgHWqYkxFkElyvI42bVW/view?usp=drive_link"
   },
   {

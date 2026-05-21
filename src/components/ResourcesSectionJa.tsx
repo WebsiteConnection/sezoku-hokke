@@ -1,5 +1,5 @@
 import React from "react";
-import { FileText, Play, BookOpen, Heart, Globe, Award, Headphones } from "lucide-react";
+import { Play, BookOpen, Heart, Globe, Award, Headphones } from "lucide-react";
 
 const resources = [
   {
@@ -37,6 +37,12 @@ const resources = [
     description: "2027年グロマイヤー賞（宗教部門）の推薦資料です。",
     icon: Award,
     url: "https://drive.google.com/file/d/1K2P8tYJ8jySWwSdpJvvBAh6va9DcwoLw/view?usp=drive_link"
+  },
+  {
+    title: "世俗仏教運動",
+    description: "世俗仏教運動全体における多様な潮流や系譜、指導者を俯瞰的に紹介するリソース・ディレクトリです。",
+    icon: Globe,
+    url: "https://sezoku-bukkyo.vercel.app/"
   }
 ];
 
@@ -53,27 +59,34 @@ const ResourcesSectionJa = () => {
         </p>
         
         <div className="grid gap-6 md:grid-cols-2">
-          {resources.map((resource) => (
-            <a
-              key={resource.title}
-              href={resource.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-start gap-4 p-6 rounded-lg bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 h-full"
-            >
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary/10 transition-colors">
-                <resource.icon className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium text-neutral-900 mb-1 group-hover:text-primary transition-colors">
-                  {resource.title}
-                </h3>
-                <p className="text-sm text-neutral-900 leading-relaxed">
-                  {resource.description}
-                </p>
-              </div>
-            </a>
-          ))}
+          {resources.map((resource, index) => {
+            // Check if this card is the odd one out at the very end of the list
+            const isLastOdd = index === resources.length - 1 && resources.length % 2 !== 0;
+
+            return (
+              <a
+                key={resource.title}
+                href={resource.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group flex items-start gap-4 p-6 rounded-lg bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 ${
+                  isLastOdd ? "md:col-span-2 md:max-w-md md:mx-auto w-full" : "h-full"
+                }`}
+              >
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <resource.icon className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-neutral-900 mb-1 group-hover:text-primary transition-colors">
+                    {resource.title}
+                  </h3>
+                  <p className="text-sm text-neutral-900 leading-relaxed">
+                    {resource.description}
+                  </p>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

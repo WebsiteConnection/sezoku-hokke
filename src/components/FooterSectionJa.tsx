@@ -26,7 +26,7 @@ const FooterSectionJa = () => {
         </div>
         
         <p className="text-sm text-muted-foreground font-body">
-          最終更新：2026年5月20日
+          最終更新：2026年11月15日
         </p>
       </div>
     </footer>
